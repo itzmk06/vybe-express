@@ -2,7 +2,7 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const { verifySignUpData } = require('../utils/validation');
-const { User } = require('../models/user');
+const { User } = require('../models/User');
 const { userAuth } = require('../middlewares/authMiddleware');
 
 const authRouter = express.Router();
